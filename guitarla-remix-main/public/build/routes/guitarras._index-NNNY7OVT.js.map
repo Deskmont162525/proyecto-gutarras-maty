@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:routes/guitarras._index.jsx?browser", "../../../app/routes/guitarras._index.jsx"],
+  "sourcesContent": ["export { default, meta } from \"./routes/guitarras._index.jsx\";", "import { useLoaderData } from \"@remix-run/react\";\r\nimport ListadoGuitarras from \"~/components/listado-guitarras\";\r\nimport { getGuitarras } from \"~/models/guitarras.server\";\r\n\r\nexport async function loader() {\r\n  const guitarras = await getGuitarras();\r\n  return guitarras.data;\r\n}\r\n\r\nexport function meta() {\r\n  return [\r\n    { title: \"GuitarLA - Tienda\" },\r\n    {\r\n      description: \"Venta de Guitarras, Blog de Musica, Coleccion de guitarras\",\r\n    },\r\n  ];\r\n}\r\n\r\nfunction Tienda() {\r\n  const guitarras = useLoaderData();\r\n\r\n  return <ListadoGuitarras guitarras={guitarras} />;\r\n}\r\n\r\nexport default Tienda;\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;;;ACAA;AAAA;AAAA;AAAA;AAAA;AAEA,uBAA6B;AAmBpB;AAZF,SAAS,OAAO;AACrB,SAAO;AAAA,IACL,EAAE,OAAO,oBAAoB;AAAA,IAC7B;AAAA,MACE,aAAa;AAAA,IACf;AAAA,EACF;AACF;AAEA,SAAS,SAAS;AAChB,QAAM,YAAY,cAAc;AAEhC,SAAO,mDAAC,oBAAiB,aAAlB;AAAA;AAAA;AAAA;AAAA,SAAwC;AACjD;AAEA,IAAO,0BAAQ;",
+  "names": []
+}
