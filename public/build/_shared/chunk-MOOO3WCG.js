@@ -1,0 +1,1 @@
+import{b as g,d as e,e as t,f as o,g as a,h as n}from"/build/_shared/chunk-5XCBIPQZ.js";var f=g((l,r)=>{e();t();o();n();a();r.exports={}});e();t();o();n();a();var w=c=>{let s=new Date(c),i={year:"numeric",month:"long",day:"2-digit"};return s.toLocaleDateString("es-ES",i)};export{f as a,w as b};

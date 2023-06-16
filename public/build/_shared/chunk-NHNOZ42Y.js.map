@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["empty-module:~/models/post.server", "../../../app/utils/helpers.js"],
-  "sourcesContent": ["module.exports = {};", "export const formatearFecha = (fecha) => {\r\n  const fechaNueva = new Date(fecha);\r\n  const opciones = {\r\n    year: \"numeric\",\r\n    month: \"long\",\r\n    day: \"2-digit\",\r\n  };\r\n  return fechaNueva.toLocaleDateString(\"es-ES\", opciones);\r\n};\r\n"],
-  "mappings": ";;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,WAAO,UAAU,CAAC;AAAA;AAAA;;;ACAlB;AAAA;AAAA;AAAA;AAAA;AAAO,IAAM,iBAAiB,CAAC,UAAU;AACvC,QAAM,aAAa,IAAI,KAAK,KAAK;AACjC,QAAM,WAAW;AAAA,IACf,MAAM;AAAA,IACN,OAAO;AAAA,IACP,KAAK;AAAA,EACP;AACA,SAAO,WAAW,mBAAmB,SAAS,QAAQ;AACxD;",
-  "names": []
-}

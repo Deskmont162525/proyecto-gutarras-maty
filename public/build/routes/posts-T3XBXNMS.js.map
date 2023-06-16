@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["browser-route-module:routes/posts.jsx?browser", "../../../app/routes/posts.jsx"],
-  "sourcesContent": ["export { default, links } from \"./routes/posts.jsx\";", "import { Outlet } from \"@remix-run/react\";\nimport style from \"../styles/blog.css\";\n\nexport function links() {\n  return [\n  {\n    rel: \"stylesheet\",\n    href: style\n  }];\n\n}\n\nfunction Blog() {\n  return (\n    <main className=\"contenedor\">\r\n      <Outlet />\r\n    </main>);\n\n}\n\nexport default Blog;"],
-  "mappings": ";;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;;;ACAA;AAAA;AAAA;AAAA;AAAA;AAeM;AAZC,SAAS,QAAQ;AACtB,SAAO;AAAA,IACP;AAAA,MACE,KAAK;AAAA,MACL,MAAM;AAAA,IACR;AAAA,EAAC;AAEH;AAEA,SAAS,OAAO;AACd,SACE,mDAAC,UAAK,WAAU,cACd,6DAAC,YAAD;AAAA;AAAA;AAAA;AAAA,SAAQ,KADV;AAAA;AAAA;AAAA;AAAA,SAEA;AAEJ;AAEA,IAAO,gBAAQ;",
-  "names": []
-}

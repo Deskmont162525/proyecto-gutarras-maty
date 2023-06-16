@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["browser-route-module:routes/posts._index.jsx?browser", "../../../app/routes/posts._index.jsx"],
-  "sourcesContent": ["export { default, meta } from \"./routes/posts._index.jsx\";", "import { useLoaderData } from \"@remix-run/react\";\r\nimport ListadoPosts from \"~/components/listado-posts\";\r\nimport { getPosts } from \"~/models/post.server\";\r\n\r\nexport async function loader() {\r\n  const posts = await getPosts();\r\n  return posts.data;\r\n}\r\n\r\nexport function meta() {\r\n  return [\r\n    {\r\n      title: \"GuitarLA - Blog\",\r\n      description: \"GuitarLA, venta de guitarras\",\r\n    },\r\n  ];\r\n}\r\n\r\nfunction Blog() {\r\n  const posts = useLoaderData();\r\n\r\n  return <ListadoPosts posts={posts} />;\r\n}\r\n\r\nexport default Blog;\r\n"],
-  "mappings": ";;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;;;ACAA;AAAA;AAAA;AAAA;AAAA;AAEA,kBAAyB;AAmBhB;AAZF,SAAS,OAAO;AACrB,SAAO;AAAA,IACL;AAAA,MACE,OAAO;AAAA,MACP,aAAa;AAAA,IACf;AAAA,EACF;AACF;AAEA,SAAS,OAAO;AACd,QAAM,QAAQ,cAAc;AAE5B,SAAO,mDAAC,gBAAa,SAAd;AAAA;AAAA;AAAA;AAAA,SAA4B;AACrC;AAEA,IAAO,sBAAQ;",
-  "names": []
-}
